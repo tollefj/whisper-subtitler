@@ -1,8 +1,5 @@
-torch
-torchaudio
-torchvision
-git+https://github.com/m-bain/whisperx.git
-git+https://github.com/ytdl-org/youtube-dl.git@master
+whisperx
+yt-dlp
 ffmpeg-python
+pyyaml
 srt
-sacremoses

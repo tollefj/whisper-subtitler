@@ -34,6 +34,7 @@ def transcribe(
         "video": os.path.join(tmp_folder, "video.mp4"),
         "audio": os.path.join(tmp_folder, "audio.mp3"),
         "srt": os.path.join(tmp_folder, "subtitles.srt"),
+        "raw_transcript": os.path.join(tmp_folder, "raw_transcript.json"),
     }
 
     if any(url_like in media_path for url_like in ["http", "www"]):
@@ -87,7 +88,7 @@ if __name__ == "__main__":
         "-m",
         "--model",
         help="Model for transcription",
-        default="NbAiLab/nb-whisper-small",
+        default="NbAiLab/nb-whisper-large",
     )
     parser.add_argument(
         "-d", "--diarize", help="Whether to diarize the audio", action="store_true"

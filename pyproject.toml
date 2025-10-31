@@ -1,0 +1,16 @@
+[project]
+name = "whisper-subtitler"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ffmpeg-python>=0.2.0",
+    "pyyaml>=6.0.3",
+    "sacremoses>=0.1.1",
+    "srt>=3.5.3",
+    "torch==2.8.0",
+    "torchaudio==2.8.0",
+    "whisperx>=3.7.2",
+    "yt-dlp>=2025.10.22",
+]
